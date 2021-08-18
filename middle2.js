@@ -27,7 +27,8 @@ const middle = function (array) {
     return [];
   }
   // for (let element in array) {
-  if (array.length % 2 === 0) {
+    //remove %2 === 0, it accesses different values by reversing output of midNUm towards even arr and odd arr
+  if (array.length % 2) {
     return [array[midNum]];
 
   } else {
