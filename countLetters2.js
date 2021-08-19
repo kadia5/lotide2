@@ -9,20 +9,21 @@ console.log(`Assertion Passed: ${actual} === ${expected}`);
 }
 
 const countLetters = function(letters) {
-  const results = {};
-  console.log(letters)
-
-  for (const item of letters) {
-    console.log(item);
   
-      if (results[item]) {
-       results[item] += 0;
+  const results = {};
+  for (let i = 0; i < letters.length; i++) {
+    let letter = letters.charAt(i);
+    // if (results[letter] === ' ') {
+    //   letters.replace(/ /g,'')
+    // }
+    if (results[letter]) {
+       results[letter] ++;
     } else {
-      results[item] = 0;
+      results[letter] = 1;
     
   }
 }
-return results;
+return   results;
 
 }
 
